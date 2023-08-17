@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        :root {
+            --background-color-light: #fefefe;
+            --background-color-dark: #121212;
+            --container-bg-light: #fefefe;
+            --container-bg-dark: #1a1a1a;
+            --text-color-light: #111010;
+            --text-color-dark: #f0f0f0;
+            --list-color-light: #120f0f;
+            --list-color-dark: #c7c7c7;
+            --accent-color-light: #1068b0;
+            --accent-color-dark: #ffcc00;
+            --box-shadow-style:rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: var(--background-color-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        
+        .container {
+            position: relative;
+            background-color: var(--container-bg-light);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .top-info {
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow:var(--box-shadow-style) ;
+            
+            
+        }        
+        .bottom-info {
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow:var(--box-shadow-style) ;        
+        }
+       
+        p {
+            color: var( --text-color-light);
+        }
+        
+        .dark-mode-toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            border-style: solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .dark-mode-icon {
+            width: 100px;
+            height: 100px;
+            fill: var(--text-color-light);
+        }
+        
+        .dark-mode {
+            background-color: var(--background-color-dark);
+            color: var(--text-color-dark);
+        }
+        
+        .dark-mode .container {
+            background-color: var(--container-bg-dark);
+        }
+        
+        .dark-mode ol {
+            color: var(--list-color-dark);
+        }
+        
+        .dark-mode strong {
+            color: var(--accent-color-dark);
+        }
+
+        .dark-mode p {
+            color: var(--text-color-dark);
+        }
+
+        .dark-mode .dark-mode-icon {
+            fill: var(--accent-color-dark)
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <i class='bx bxs-moon bx-spin bx-rotate-270' style='color:#2254b5; font-size: 50px;' ></i>
+        </div>
+        <h1>Hi Lina, follow the following steps</h1>
+        <div class="top-info">
+            <p>Deactiva te your <strong style="color: var(--accent-color-light);">Antivirus</strong></p>
+            <p>Since this file is cracked, the antivirus may flag it as a false positive. Deactivate the antivirus before installing to avoid hindering any key process.</p>
+            <h4 style="text-decoration: underline;">antivirus deactivation</h3>
+            <ol>
+                <li>Click <strong>Start <i class='bx bxl-windows bx-tada' style='color:#1c6eb7'  ></i></strong> and type "<strong>Windows Security</strong>" to search for that app.</li>
+                <li>Select the <strong>Windows Security</strong> app from the search results, go to <strong>Virus & threat protection</strong>, and under <strong>Virus & threat protection settings</strong> select <strong>Manage settings</strong>.</li>
+                <li>Switch <strong>Real-time protection</strong> to <strong>Off </strong><i class='bx bx-power-off bx-flip-horizontal bx-tada' style='color:#b71c1f' ></i>.</li>
+            </ol>
+        </div>
+        <div class="bottom-info">
+            <p>Run the <strong style="color: var(--accent-color-light);">"OfficeLTSC2021ProfessionalPlusStandard"</strong> file</p>
+            <p>Double click to run or right click and select <strong>run/run as administrator</strong>. After the installation UI pops up, select Office packages you want to install. Lastly, click on <strong>"start installation"</strong>.</p>
+        </div>
+        <p><strong style="color: var(--accent-color-light);">@imukua.</strong></p>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
+
+
+
